@@ -24,6 +24,7 @@ LOD2Zero <- function(counts,LOD, output){
         counts[j,i] = 0
       }
     }     # for-loop over columns
+    print("done")
   }
   write.csv(counts, paste0(output,".csv"), row.names = FALSE)
 }
